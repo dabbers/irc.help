@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can use /kick <#channel> <nickname>"
+        }
+    ]
+}

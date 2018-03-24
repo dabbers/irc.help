@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can join channels by using '/join <#channelname>' you may not be able to join if the channel is invite only, if you are banned, or if the channel has reached it's limit."
+        }
+    ]
+}

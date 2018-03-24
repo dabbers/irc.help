@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can identify your existing nickname by using NICKSERV. You can use '/ns help identify' for more info, or use '/ns identify <Password>' (Without the <>)"
+        }
+    ]
+}

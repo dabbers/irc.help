@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can register your existing nickname by using NICKSERV. You can use '/ns help register' for more info, or use '/ns register <Password> <Email Address>' (Without the <>)"
+        }
+    ]
+}

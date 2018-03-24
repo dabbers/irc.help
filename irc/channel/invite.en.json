@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can invite users to a channel by using '/invite <nickname> <#channel>'"
+        }
+    ]
+}

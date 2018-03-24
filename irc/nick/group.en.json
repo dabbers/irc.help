@@ -1,0 +1,7 @@
+{
+    "DEFAULT": [
+        {
+            "Message":"You can group your existing nickname by using NICKSERV. You can use '/ns help group' for more info, or use '/ns group <original nickname> <Password>' (Without the <>) as your new nickname."
+        }
+    ]
+}
