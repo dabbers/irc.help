@@ -1,0 +1,18 @@
+{
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
+        {
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"The maximum line length is 512 characters, but all messages end with CRLF, so the maximum length is 510 characters."
+                }
+            ]
+        }
+    ]
+}

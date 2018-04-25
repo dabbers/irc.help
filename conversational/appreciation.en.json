@@ -1,0 +1,38 @@
+{
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
+        {
+            "Intents": [
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Any time! Let me know if you have any other questions.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"Don't mention it :) Let me know if you have any other questions.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"No problem. Let me know if you have any other questions.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Contains":["help"],
+                    "Message":"Glad to help. Let me know if you have any other questions.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,18 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"Use /list"
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Use /list"
+                }
+            ]
         }
     ]
 }

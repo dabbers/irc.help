@@ -1,7 +1,19 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"Auto joining channels is a client side thing."
+            "Intents": [
+                "None",
+                "irc/help",
+                "help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Auto joining channels is a client side thing."
+                }
+            ]
         }
     ]
 }

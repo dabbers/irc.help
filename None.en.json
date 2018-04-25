@@ -1,7 +1,80 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"I don't know what you're asking."
+            "Intents": [
+                "irc/nick/host/q0"
+            ],
+            "#(([\\w\\-_]+@)?([\\w\\-_]+\\.)*[\\w\\-_]+\\.[\\w\\-_]+)": [
+                {
+                    "!Contains":["fuck","bitch","nigger","nigga","asshole"],
+                    "Message":"Are you sure you would like to use {{0}}?",
+                    "Storage": [
+                        {"LastIntent": "irc/nick/host/q1"}
+                    ]
+                }
+            ],
+            "DEFAULT":[
+                {
+                    "Message":"I'm sorry, that's not a valid hostname. What hostname do you want? (You can say nevermind if you don't want a vhost)"
+                },
+                {
+                    "Message":"That's not a vhost you can use. What vhost would you like? (Say nevermind if you don't want a vhost)"
+                }
+            ]
+        },
+        {
+            "Intents": [
+                "noop",
+                "conversational/ack",
+                "conversational/appreciation",
+                "conversational/unack",
+                "about/language",
+                "irc/channel/auto_join",
+                "irc/channel/ban",
+                "irc/channel/bot",
+                "irc/channel/invite",
+                "irc/channel/join",
+                "irc/channel/kick",
+                "irc/channel/list",
+                "irc/channel/oper",
+                "irc/channel/register",
+                "irc/nick/group",
+                "irc/nick/host",
+                "irc/nick/identify",
+                "irc/nick/register",
+                "irc/oper/host_exception",
+                "irc/protocol/length",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Sorry, I don't know what is going on. Let's start again.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"I'm confused. Let's try again. How can I help you?",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"Wait what? Sorry. I don't understand. Let's try again.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"I'm afraid I can't understand you. Let's try again.",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                }
+            ]
         }
     ]
 }

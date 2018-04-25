@@ -1,7 +1,18 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"Temporary oper can be given by using /mode <#channelname> +o <nickname>. For persistent oper, use /cs help oper add"
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Temporary oper can be given by using /mode <#channelname> +o <nickname>. For persistent oper, use /cs help oper add"
+                }
+            ]
         }
     ]
 }

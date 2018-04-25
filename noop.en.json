@@ -1,0 +1,39 @@
+{
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
+        {
+            "Intents": [
+                "irc/nick/host/q0"
+            ],
+            "#(([\\w\\-_]+@)?([\\w\\-_]+\\.)*[\\w\\-_]+\\.[\\w\\-_]+)": [
+                {
+                    "!Contains":["fuck","bitch","nigger","nigga","asshole"],
+                    "Message":"Are you sure you would like to use {{0}}?",
+                    "Storage": [
+                        {"LastIntent": "irc/nick/host/q1"}
+                    ]
+                }
+            ],
+            "DEFAULT":[
+                {
+                    "Message":"I'm sorry, that's not a valid hostname. What hostname do you want? (You can say nevermind if you don't want a vhost)"
+                },
+                {
+                    "Message":"That's not a vhost you can use. What vhost would you like? (Say nevermind if you don't want a vhost)"
+                }
+            ]
+        },
+        {
+            "Intents": [
+                "None"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"<ignoring1>"
+                }
+            ]
+        }
+    ]
+}

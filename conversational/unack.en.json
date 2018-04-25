@@ -1,0 +1,50 @@
+{
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
+        {
+            "Intents": [
+                "irc/help",
+                "irc/channel/auto_join",
+                "irc/channel/ban",
+                "irc/channel/bot",
+                "irc/channel/invite",
+                "irc/channel/join",
+                "irc/channel/kick",
+                "irc/channel/list",
+                "irc/channel/oper",
+                "irc/channel/register",
+                "irc/help/about/language",
+                "irc/nick/group",
+                "irc/nick/host",
+                "irc/nick/host/q0",
+                "irc/nick/host/q1",
+                "irc/nick/identify",
+                "irc/nick/register",
+                "irc/oper/host_exception",
+                "irc/protocol/length"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Okay, sory about that then. Do you need anything?",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"Sorry! We can start again if you'd like. How can I help you?",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                },
+                {
+                    "Message":"Oops. Okay I guess we'll start over again. What can I do for you?",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

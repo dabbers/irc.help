@@ -1,7 +1,27 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"Sorry session limit exceptions support is still under construction."
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "!Contains": ["what","wut","how","much"],
+                    "Message":"Sorry automated session limit exceptions support is still under construction."
+                },
+                {
+                    "Contains": ["what","wut","how","much"],
+                    "Message":"The default session limit is 3, network wide. A per-server maximum is 5. This feature prevents too many users from connecting from a single IP address."
+                },
+                {
+                    "Contains": ["what","wut","how","much"],
+                    "Message":"Our network wide session limit is 3 with 5 being the per server maximum. This feature prevents too many users from connecting from a single IP address."
+                }
+            ]
         }
     ]
 }

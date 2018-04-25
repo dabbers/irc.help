@@ -10,7 +10,7 @@
             ],
             "DEFAULT": [
                 {
-                    "Message":"See /cs help register for more information."
+                    "Message":"See '/bs help' for more information."
                 }
             ]
         }

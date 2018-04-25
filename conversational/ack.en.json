@@ -5,12 +5,10 @@
     "Intent": [
         {
             "Intents": [
-                "None",
-                "irc/help"
             ],
             "DEFAULT": [
                 {
-                    "Message":"See /cs help register for more information."
+                    "Message":"okie dokie"
                 }
             ]
         }

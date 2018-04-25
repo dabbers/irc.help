@@ -1,7 +1,54 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"Sorry vhost support is still under construction."
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "vhost": [
+                {
+                    "Message":"You want {{vhost}} as your vhost?",
+                    "Storage": [
+                        {"LastIntent": "irc/nick/host/q1"}
+                    ]
+                },
+                {
+                    "Message":"You want to set your host to {{vhost}}?",
+                    "Storage": [
+                        {"LastIntent": "None"}
+                    ]
+                }
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"Okay, what VHOST do you want? (AUTOMATED FEATURE NOT DONE)",
+                    "Storage": [
+                        {"LastIntent": "irc/nick/host/q0"}
+                    ]
+                }
+            ]
+        },
+        {
+            "Intents": [
+                "irc/nick/host/q0"
+            ],
+            "#(([\\w\\-_]+@)?([\\w\\-_]+\\.)*[\\w\\-_]+\\.[\\w\\-_]+)": [
+                {
+                    "!Contains":["fuck","bitch","nigger","nigga","asshole"],
+                    "Message":"Are you sure you would like to use {{0}}?",
+                    "Storage": [
+                        {"LastIntent": "irc/nick/host/q1"}
+                    ]
+                }
+            ],
+            "DEFAULT":[
+                {
+                    "Message":"Sorry, that's not a valid hostname. What hostname do you want? (You can say nevermind if you don't want a vhost)."
+                }
+            ]
         }
     ]
 }

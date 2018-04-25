@@ -1,7 +1,18 @@
 {
-    "DEFAULT": [
+    "Useage": [
+        "User"
+    ],
+    "Intent": [
         {
-            "Message":"You can use /kick <#channel> <nickname>"
+            "Intents": [
+                "None",
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message":"You can use /kick <#channel> <nickname>"
+                }
+            ]
         }
     ]
 }

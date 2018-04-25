@@ -2,59 +2,119 @@
     "Useage": [
         "User"
     ],
-    "Language::English": [
+    "Intent": [
         {
-            "Message": "Sure, I can help in English! How can I help you?",
-            "Store":[
-                {"Language":"English"}
+            "Intents": [
+                "None"
+            ],
+            "Language::English": [
+                {
+                    "Message": "Sure, I can help in English! How can I help you?",
+                    "Store":[
+                        {"Language":"en"},
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Contains":["question", "query"],
+                    "Message": "Yup, I speak English. What's your question?",
+                    "Store":[
+                        {"Language":"en"},
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Contains":["question", "query"],
+                    "Message": "Yup, I speak English. What's your question?",
+                    "Store":[
+                        {"Language":"en"},
+                        {"LastIntent": "irc/help"}
+                    ]
+                }
+            ],
+            "Language::Spanish": [
+                {
+                    "Message": "En este momento no puedo assistir te en Espanol. Lo ciento.",
+                    "Store":[
+                        {"Language":"en"},
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Contains":["pregunta"],
+                    "Message": "En este momento no puedo assistir te en Espanol. Lo ciento.",
+                    "Store":[
+                        {"Language":"en"},
+                        {"LastIntent": "irc/help"}
+                    ]
+                }
+            ],
+            "DEFAULT": [
+                {
+                    "Message": "Hi there, I'm an oper bot but I can help. What's your question?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Message": "Hi, I'm an IRC oper helper bot but I can help. What's your question?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Message": "Hi, I'm an IRC operator helper bot but I can help. What can I help you with today?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Message": "Hello, I'm an IRC oper helper bot but I can help. What can I help you with today?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Contains":["assistance", "assist"],
+                    "Message": "Hello, I'm an IRC operator helper bot but I can help. How can I assist you?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                }
             ]
         },
         {
-            "Contains":"question",
-            "Message": "Yup, I speak English. What's your question?",
-            "Store":[
-                {"Language":"English"}
+            "Intents": [
+                "irc/help"
+            ],
+            "DEFAULT": [
+                {
+                    "Message": "What's your question?"
+                },
+                {
+                    "Message": "How can I help you?"
+                },
+                {
+                    "Contains":["assistance", "assist"],
+                    "Message": "What can I assist you with today?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Message": "What can I help you with today?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                },
+                {
+                    "Contains":["assistance", "assist"],
+                    "Message": "How can I assist you?",
+                    "Storage": [
+                        {"LastIntent": "irc/help"}
+                    ]
+                }
             ]
-        },
-        {
-            "Contains":"question",
-            "Message": "Yup, I speak English. What's your question?",
-            "Store":[
-                {"Language":"English"}
-            ]
-        }
-    ],
-    "Language::Spanish": [
-        {
-            "Message": "Claro, puedo ayudar en Espanol! Como puedo ayudar?",
-            "Store":[
-                {"Language":"Spanish"}
-            ]
-        },
-        {
-            "Contains":"pregunta",
-            "Message": "Si, lo hablo Espanol. Qual es tu pregunta?",
-            "Store":[
-                {"Language":"Spanish"}
-            ]
-        }
-    ],
-    "DEFAULT": [
-        {
-            "Message": "Hi there, I'm an oper bot but I can help. What's your question?"
-        },
-        {
-            "Message": "Hi, I'm an IRC oper helper bot but I can help. What's your question?"
-        },
-        {
-            "Message": "Hi, I'm an IRC operator helper bot but I can help. What can I help you with today?"
-        },
-        {
-            "Message": "Hello, I'm an IRC oper helper bot but I can help. What can I help you with today?"
-        },
-        {
-            "Contains":"assistance",
-            "Message": "Hello, I'm an IRC operator helper bot but I can help. How can I assist you?"
         }
     ]
 }
